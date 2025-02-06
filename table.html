@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function clickme() {
+      alert("Why you clicked me")
+    }
+    function add(){
+      a=parseInt(f2.n1.value);
+      b=parseInt(f2.n2.value);
+      c=a+b;
+      f2.t3.value=c;
+    }
+    // a = prompt("Enter a number:");
+    // for (i = 0; i <= 10; i++) {
+    //   document.write(a + "*" + i + "=" + a * i + "<br>");
+    //   console.log(a + "*" + i + "=" + a * i);
+    // }
+  </script>
+</head>
+
+<body>
+  <form name="f2">
+  <table width="500px" align="center" border="2">
+    <tr style="background-color: blue; color: white;">
+   <td colspan="2">Addtion of 2 numbers</td>
+    </tr>
+    <tr>
+      <td>First Number:</td>
+      <td><input type="text" name="n1"></td>
+    </tr>
+    <tr>
+      <td>Second Number:</td>
+      <td><input type="text" name="n2"></td>
+    </tr>
+    <tr>
+      <td>Sum:</td>
+      <td><input type="text" name="t3"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="button" name="add1" value="add" onclick="add()"></td>
+    </tr>
+  </table>
+</form>
+  <form name="f1">
+    <input type="text" value="Click me" name="name" onclick="clickme()">
+  </form>
+  
+    
+    
+    
+    
+    
+    
+    
+  
+  
+</body>
+
+</html>

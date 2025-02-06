@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function blurcall(){
+          f1.b1.value="don't leave me"
+        }
+        function focuscall(){
+          f1.b3.value="Oh I got it."
+        }
+    </script>
+</head>
+<body>
+    <form name="f1">
+    <h1>OnFocus &  OnBlur Example</h1>
+    <input type="button" name="b1" value="First button"  onblur="blurcall()">
+    <input type="button" name="b2" value="Second button" >
+    <input type="button" name="b3" value="Third button" onfocus="focuscall()">
+</form>
+</body>
+</html>
