@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set_timeout Example</title>
+    <script>
+        count = 0;
+        function counter() {
+            count++;
+            f1.counter.value=count;
+        }
+        function close_win(){
+            alert("Byee Byee...")
+            window.close();
+        }
+    </script>
+</head>
+
+<body onload="setTimeout('close_win()',11000);setInterval('counter()',1000)">
+    <center>
+        <div style="border:20px solid ; width: 700px;">
+            <div style="font-family: Arial; font-size: 25px;">
+                This Page will be automatically closed in 10 sec.
+            </div>
+            <form name="f1">
+                <input type="button" name="counter" style="font-size:25px ;">
+        </div>
+        </form>
+    </center>
+</body>
+
+</html>

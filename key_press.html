@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <script>
+        let count = 0;
+        function next_button() {
+            count++;
+            if (count == 1) {
+                document.getElementsByName("myimg")[0].src = "img1.png";
+            } else if (count == 2) {
+                document.getElementsByName("myimg")[0].src = "img2.png";
+            } else if (count == 3) {
+                document.getElementsByName("myimg")[0].src = "img3.jpg";
+                count = 0; // Reset count after last image
+            }
+        }
+
+        document.addEventListener("keydown", next_button); // Change image on key press
+    </script>
+</head>
+<body>
+    <img src="img3.jpg" alt="image-3" name="myimg">
+</body>
+</html>

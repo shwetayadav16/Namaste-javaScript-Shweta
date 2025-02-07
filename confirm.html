@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Color</title>
+    <script>
+        function change_color(){
+            ans=f1.n1.value
+            if(ans==""){
+                alert("Please Enter Valid Color Name..");
+            }
+            else{
+               res=confirm("Are you sure you want to change the color?");
+               if(res==true){
+                document.bgColor=ans;
+               }
+               else{
+                f1.t1.value="";
+                alert("Okay,I am ignoring your command....");
+               }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="f1">
+        Enter Your change color name:<input type="text" name="n1">
+        <input type="button" name="b1" value="change" onclick="change_color();  ">
+    </form>
+</body>
+</html>
